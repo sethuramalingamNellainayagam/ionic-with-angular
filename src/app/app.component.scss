@@ -1,0 +1,11 @@
+.nav__anchor {
+  padding-left: 16px;
+  text-decoration: none;
+  &.active-link {
+    color: red;
+  }
+}
+
+.nav__div {
+  margin-top: 16px;
+}

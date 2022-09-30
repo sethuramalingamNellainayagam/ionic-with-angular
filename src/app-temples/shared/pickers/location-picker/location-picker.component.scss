@@ -1,0 +1,26 @@
+// .select-loc__button {
+//   display: flex;
+//   justify-content: center;
+//   width: calc(100vw - 51.5vw);
+//   @media (max-width: 575px) {
+//     width: 100%;
+//   }
+// }
+
+.location__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.picker {
+  width: 30rem;
+  max-width: 80%;
+  height: 20rem;
+  max-height: 30vh;
+  border: 1px solid var(--ion-color-primary);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

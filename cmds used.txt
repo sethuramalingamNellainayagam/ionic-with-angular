@@ -1,0 +1,216 @@
+1)install node run time env from official site
+2)you can use html, js anf cdn of ionic in head and inject your script in body
+(or)
+2)go with angular, npm i -g @angular/cli, npm i -g ionic
+3)Pure angular - ng new project-name and npm start
+(or)
+3)angular+ionic - ionic start and ionic serve
+4)you can use ionic generate page (or) ionic generate component
+5)give input path or file name
+
+building in app:
+android - any system
+ios - need mac
+1) check android development in ionic docs
+2) check capacitor ionic docs
+3) need android studio, android sdk, android tools
+
+1) android studio - after open - more actions -> sdk manager
+2) sdk platforms select latest version
+3) sdk tools - select android sdk built tools, sdk tools, platform tools, intel 86 emulator
+accelerator, android emulator
+4) cmd - ionic add capacitor android
+
+Steps: https://capacitorjs.com/docs/getting-started
+npm i @capacitor/core
+npm i -D @capacitor/cli
+npx cap init learn-ionic-project com.recipe.app (appname packageID)
+capacitor.config.ts created
+npm i -g @capacitor/android @capacitor/ios
+npm i @capacitor/android @capacitor/ios
+npx cap add android
+npx cap add ios
+npx cap sync
+----- gives error 
+npx cap sync
+[error] Could not find the web assets directory: .\www.
+        Please create it and make sure it has an index.html file. You can change
+        the path of this directory in capacitor.config.ts (webDir option). You
+        may need to compile the web assets for your app (typically npm run
+        build). More info:
+        https://capacitorjs.com/docs/basics/workflow#sync-your-project
+==================== run ng build
+npx cap open android
+after any chage - ng build
+npx cap run android
+
+
+GIT repo: 
+git remote add origin https://github.com/sethuramalingamNellainayagam/recipe-ionic.git
+git branch -M main
+git push -u origin main
+
+1)https://github.com/sethuramalingamNellainayagam/recipe-ionic
+2)https://github.com/sethuramalingamNellainayagam/pure-ionic-with-js
+3)https://github.com/sethuramalingamNellainayagam/angular-refresher
+git add -A, git commit -m "", git push -f
+
+create AVD - https://developer.android.com/studio/run/managing-avds
+
+open avd - view -> devicemanager -> avd
+
+Final - https://github.com/sethuramalingamNellainayagam/ionic-with-angular
+
+
+On REAL device:
+
+
+CLONE:
+Instead of
+
+git clone https://github.com/NAME/repo.git
+
+try
+
+git clone https://username:password@github.com/NAME/repo.git
+
+You can also use
+
+git clone https://username@github.com/NAME/repo.git
+
+
+1) https://github.com/sethuramalingamNellainayagam/ionic-with-angular
+git clone https://sethuramalingamNellainayagam:sethu@Sangee21@github.com/ionic-with-angular.git
+
+git clone https://github.com/sethuramalingamNellainayagam/ionic-with-angular.git
+
+git clone https://sethuramalingamNellainayagam:sethu%40Sangee21@github.com/ionic-with-angular.git
+
+WORKED FOR PRIVATE REPO CLONE: git clone https://sethuram213@github.com/sethuramalingamNellainayagam/ionic-with-angular.git
+
+Auth failed: https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls
+
+TOKEN personal access token: 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
+
+FIRBASE HIT API: https://ionic-angular-places-2e534-default-rtdb.firebaseio.com/
+https://ionic-angular-places-2e534-default-rtdb.firebaseio.com/offered-places.json - post req
+
+============================
+Run in mac:
+1) sudo npm install -g cordova ionic
+
+============================
+error in CORS policy for delete request rest api call ->
+chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
+open /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+
+For new google - package install - yarn add @types/google.maps
+yarn add @angular/google-maps
+yarn add @types/googlemaps
+
+working - <google-map>
+yarn add @angular/google-maps@14.2.7;2D
+Add GoogleMapsModule in repective NgModule
+add script api key src in index html
+
+yarn add @capacitor/core
+yarn add @capacitor/splash-screen
+
+ionic capacitor run ios - to run app in ios(xcode)
+1) npx cap init
+2) yarn add @capacitor/android @capacitor/ios
+3) npx cap add android/npx cap add ios
+4) npx cap sync ios/android
+5) npx cap open ios/android
+6) npx cap run ios/android
+7) add this in capacitor config
+server: {
+		hostname: "127.0.0.1",
+		cleartext: true,
+		allowNavigation: ["*"]
+	}
+8) npm run build
+9) npx cap build ios/npx cap sync ios
+
+Geo location:
+yarn add @capacitor/geolocation
+
+Camera:
+yarn add @capacitor/camera
+
+After any code change:
+npm run build
+npm cap sync ios
+npm cap run ios
+
+PWA Elements:
+yarn add @ionic/pwa-elements
+
+Firebase TOOLS for image upload to server:
+yarn add firebase-tools
+npm i -g firebase-tools
+firebase login
+firebase init
+firebase deploy
+
+Capacitor prefernces api for storage:
+yarn add @capacitor/preferences
+
+Add auth toke every call for back end to be secure - authorize api calls
+
+deploy:
+ng build --configuration production
+
+deploy web:
+yarn add @angular/pwa
+ng build --configuration production
+firebase init
+hosting - www, spa, dont overwrite index html
+firebase deploy
+
+host web url: https://ionic-angular-places-2e534.web.app
+
+FLUTTER:
+flutter.dev - setup
+1) download flutter sdk
+2) go to the sdk pasted path
+3) export PATH="$PATH:`pwd`/flutter/bin"
+4) echo $SHELL -> what shell ur mac uses bash/z shell
+5) if know rc or bask file then create
+6) cd ~ -> go to home
+7) sudo nano .bash_profile -> to create bash file
+8) add PATH
+/Users/sethuramalingam.n/Documents/flutter learn/flutter
+export PATH="$PATH:[PATH_OF_FLUTTER_GIT_DIRECTORY]/bin"
+export PATH="$PATH:/Users/sethuramalingam.n/Documents/flutter learn/flutter/bin"
+9) ctrl+O
+10) enter
+11) ctrl+X
+12) check whether bin path SET -> echo $PATH
+13) which flutter
+14) flutter
+15) flutter upgrade
+16) sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+ sudo xcodebuild -runFirstLaunch
+17) sudo xcodebuild -license
+18) open -a Simulator
+19) flutter doctor
+20) android studio sdk path /Users/sethuramalingam.n/Library/Android/sdk
+install cmd-linetools component
+/Users/sethuramalingam.n/Library/Android/sdk --install "cmdline-tools;latest"
+export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:/Users/sethuramalingam.n/Library/Android/sdk"
+
+to install:
+1) go to sdk path -> cd ~/Library/Android/sdk/tools/bin
+flutter config --android-sdk "/Users/sethuramalingam.n/Library/Android/sdk"
+
+React:
+1) https://github.com/facebook/create-react-app
+npx create-react-app my-app
+cd my-app
+npm start
+2) downloaded src cleaned up and run npm i
+3) style components scoping - styles components package use
+npm install --save styled-components
+4) npm i ipfs
+5) npm i buffer

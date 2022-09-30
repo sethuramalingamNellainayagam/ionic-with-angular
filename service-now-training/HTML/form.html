@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Forms</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="" rel="stylesheet" />
+  </head>
+  <body>
+    <form action="action.php" method="GET">
+      <div>
+        <label for="fname">first name</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="enter your first name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="lname">last name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="enter your last name"
+        />
+      </div>
+
+      <div>
+        <label for="password">password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="enter your password"
+          required
+          maxlength="12"
+        />
+      </div>
+
+      <div>
+        <label for="email">email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@mail.com"
+        />
+      </div>
+
+      <div>
+        <label for="phno">ph no</label>
+        <input
+          type="tel"
+          id="phno"
+          name="phno"
+          placeholder="enter your ph no"
+        />
+      </div>
+
+      <div>
+        <label for="date">date</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          placeholder="enter your birthdate"
+        />
+      </div>
+
+      <div>
+        <label for="quantity">quantity</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          placeholder="enter your quantity"
+          min="0"
+          max="999"
+        />
+      </div>
+
+      <div>
+        <button type="reset">Reset</button>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

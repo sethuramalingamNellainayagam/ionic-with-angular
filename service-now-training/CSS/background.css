@@ -1,0 +1,18 @@
+body {
+    background-image: url(./photo-1631631480669-535cc43f2327.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    background: linear-gradient(to left, skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p{
+    background: linear-gradient(to right, skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

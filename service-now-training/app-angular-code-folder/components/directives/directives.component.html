@@ -1,0 +1,54 @@
+<!-- <div *ngIf="courses.length > 0;then Courses; else NoCourses">
+    
+</div> -->
+<!-- <div *ngIf="courses.length == 0">
+    No courses
+</div> -->
+
+<!-- <ng-template #Courses>
+    List of courses
+</ng-template>
+<ng-template #NoCourses>
+    No courses
+</ng-template> -->
+
+<!-- <div [hidden]="courses.length == 0">
+    List of courses
+</div>
+<div [hidden]="courses.length > 0">
+    No courses
+</div> -->
+
+<!-- <div [ngIf]="courses.length > 0">
+    <ng-template>
+        List of courses
+    </ng-template>
+</div>
+<div [ngIf]="courses.length == 0">
+    <ng-template>
+        No Courses
+    </ng-template>
+</div> -->
+
+<!-- <div style="display: flex; gap: 24px;">
+    <div><a [class.active]="viewPage === 'first'" (click)="changeViewPage($event, 'first')" href="">First page</a></div>
+    <div><a [class.active]="viewPage === 'second'" href="" (click)="changeViewPage($event, 'second')">Second page</a></div>
+    <div><a [class.active]="viewPage === 'third'" href="" (click)="changeViewPage($event, 'third')">Third page</a></div>
+</div>
+
+<div [ngSwitch]="viewPage">
+    <div *ngSwitchCase="'first'">First Page Content</div>
+    <div *ngSwitchCase="'second'">Second Page Content</div>
+    <div *ngSwitchCase="'third'">Third Page Content</div>
+    <div *ngSwitchDefault>No page</div>
+</div> -->
+
+<!-- <button (click)="loadCourses()">Load courses</button>
+<ul>
+  <li *ngFor="let course of coursesObj; index as i; even as isEven; trackBy: trackCourses">
+    {{ i }} - {{ course.name }} <span *ngIf="isEven">(EVEN)</span>
+  </li>
+</ul> -->
+
+<p [ngStyle]="{'background-color': applyColor ? 'red' : 'blue',
+'border': !applyColor}">This is ngClass</p>

@@ -1,0 +1,15 @@
+h1 {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 5px;
+    border-left-color: silver;
+}
+
+p {
+    border-style: solid;
+    border-color: red;
+    border-radius: 8px;
+    border-width: 5px;
+    padding: 8px;
+}

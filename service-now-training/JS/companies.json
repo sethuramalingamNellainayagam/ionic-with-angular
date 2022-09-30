@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Big corporation",
+        "numberOfEmployees": 10000,
+        "ceo": "max",
+        "rating": 4
+    },
+    {
+        "name": "Startup company",
+        "numberOfEmployees": 5,
+        "ceo": "tim",
+        "rating": 4.2
+    }
+]

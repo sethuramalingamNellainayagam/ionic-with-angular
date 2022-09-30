@@ -1,0 +1,26 @@
+<div class="picker">
+  <ion-spinner color="primary" *ngIf="isLoading"></ion-spinner>
+  <ion-img
+    rolw="buttton"
+    class="location__image"
+    *ngIf="selectedImage && !isLoading"
+    [src]="selectedImage"
+    (click)="onPickLocation()"
+  ></ion-img>
+  <ion-button
+    class="pick-loc__btn"
+    *ngIf="!selectedImage && !isLoading"
+    color="primary"
+    (click)="onPickLocation()"
+    ><ion-icon slot="start" name="map"></ion-icon
+    ><ion-label>Pick A Location</ion-label></ion-button
+  >
+  <ion-button
+    class="pick-loc__btn"
+    *ngIf="!selectedImage && !isLoading"
+    color="primary"
+    (click)="onGetCurrentLocation()"
+    ><ion-icon slot="start" name="map"></ion-icon
+    ><ion-label>Get Current Location</ion-label></ion-button
+  >
+</div>

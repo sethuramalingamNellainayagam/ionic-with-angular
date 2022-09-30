@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>API call using ajax for my profile</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myprofile"></div>
+    <script>
+      //https://api.github.com/users/sethuramalingamNellainayagam
+      function getProfile() {
+        const userName = "sethuramalingamNellainayagam";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (xhttp.readyState == 4 && xhttp.status == 200) {
+            const getJSONObjRes = JSON.parse(xhttp.responseText);
+            console.log(getJSONObjRes, " getJSONObjRes");
+            document.getElementById("myprofile").innerHTML = `
+            <h4>${getJSONObjRes.login}</h4>
+            <img src="${getJSONObjRes.avatar_url}">`;
+          }
+        };
+
+        xhttp.open("GET", "https://api.github.com/users/" + userName, true);
+        xhttp.send();
+      }
+
+      getProfile();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+#box1 {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    font-size: 200px;
+    background: lightgreen;
+
+    animation: colorChange;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+
+@keyframes mySlideRightToLeft {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes opacity {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes scaling {
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+@keyframes colorChange {
+    20% {
+        background-color: yellow;
+    }
+
+    40% {
+        background-color: aqua;
+    }
+
+    60% {
+        background-color: blueviolet;
+    }
+}

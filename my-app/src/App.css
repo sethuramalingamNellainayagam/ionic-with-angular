@@ -1,0 +1,6 @@
+.app__title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

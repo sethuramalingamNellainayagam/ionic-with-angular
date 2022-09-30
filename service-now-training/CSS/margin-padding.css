@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+#box1 {
+    border: 3px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: skyblue;
+
+    padding: 16px;
+    margin-left: auto;
+}
+
+#box2 {
+    border: 3px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: lightgreen;
+}

@@ -1,0 +1,13 @@
+<div class="nav__div">
+  <a
+    class="nav__anchor"
+    *ngFor="let page of [].constructor(5); index as i"
+    [id]="'nav-' + i"
+    [routerLink]="'/page' + (i + 1)"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >{{ "Note " + (i + 1) }}
+  </a>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,26 @@
+a {
+    font-size: 44px;
+}
+a:link {
+    color: lightgreen;
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: blueviolet;
+}
+
+button:hover {
+    background-color: grey;
+}
+button:active {
+    background-color: white;
+}
+
+li:nth-child(even) {
+    background-color: yellow;
+}

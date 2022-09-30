@@ -1,0 +1,7 @@
+.box {
+    width: 125px;
+    height: 300px;
+    background-color: tomato;
+    text-align: center;
+    word-wrap: break-word;
+}

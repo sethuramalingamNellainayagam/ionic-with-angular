@@ -1,0 +1,22 @@
+{
+    "name": "max",
+    "favoriteNo": 3,
+    "isDeveloper": true,
+    "hobbies": [
+        "cricket",
+        "watching web series",
+        "football"
+    ],
+    "friends": [
+        {
+            "name": "tim",
+            "favoriteNo": 3,
+            "isDeveloper": true,
+            "hobbies": [
+                "movies",
+                "bike trips"
+            ],
+            "friends": []
+        }
+    ]
+}

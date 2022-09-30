@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: 'Poppins', Courier, monospace;
+}
+
+p {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: cyan dashed underline;
+    font-size: 18px;
+}
+
+#p1 {
+    /* color: blue; */
+}
+
+.odd {
+    color: red;
+}
+
+.even {
+    color: greenyellow;
+}

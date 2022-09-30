@@ -1,0 +1,4 @@
+<p *ngIf="fetched">Loading Data...</p>
+<ul *ngIf="!fetched">
+  <li *ngFor="let person of persons" (click)="removePerson(person)">{{ person }}</li>
+</ul>
